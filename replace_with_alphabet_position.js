@@ -16,7 +16,7 @@ Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 1
 
 //First attempt
 
-function alphabetPosition(text) {
+alphabetPosition(text) {
   let result = [];
   let alphabetList = ['a', 'b', 'c' ,'d', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   let splitText = text.split('');
@@ -31,7 +31,7 @@ function alphabetPosition(text) {
   return result.join(' ');
 }
 
-//Reduce way
+//Reduced way
 
 function alphabetPosition(text) {
   return text.toLowerCase().split('').map(el => el.charCodeAt(0) - 96).filter(el => el > 0 && el < 27).join(' ');
