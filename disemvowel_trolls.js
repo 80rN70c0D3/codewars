@@ -11,7 +11,7 @@ Note: for this kata y isn't considered a vowel.
 
 function disemvowel(str) {
     var result = "";
-    var vowelsList ="aeiou"
+    var vowelsList = "aeiou"
     for (var i = 0; i < str.length; i++) {
         if(vowelsList.includes(str[i].toLowerCase())){
             continue;
