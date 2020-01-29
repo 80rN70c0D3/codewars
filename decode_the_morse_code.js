@@ -83,14 +83,14 @@ decodeMorse = function(str) {
 }
 
 
-//Most upvoted solution 
+//Most upvoted solution with const morseCode
 
-decodeMorse = function(morseCode){
+decodeMorse = function(str){
     function decodeMorseLetter(letter) {
-      return MORSE_CODE[letter];
+      return morseCode[letter];
     }
     function decodeMorseWord(word) {
       return word.split(' ').map(decodeMorseLetter).join('');
     }
-    return morseCode.trim().split('   ').map(decodeMorseWord).join(' ');
+    return str.trim().split('   ').map(decodeMorseWord).join(' ');
   }
