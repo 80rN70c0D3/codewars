@@ -19,5 +19,3 @@ function positiveSum(arr) {
 	}
   return result;
 }
-
-//end
