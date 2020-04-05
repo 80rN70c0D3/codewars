@@ -20,5 +20,3 @@ function opposite (number) {
 function opposite(n) {
   return -n;
 }
-
-//end
